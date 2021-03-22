@@ -4,7 +4,7 @@
 
 It is a responsive mobile-first Landing page.
 
-**Link
+visit: [Easy-Bank](https://easy-bank-plum.vercel.app/)
 
 **Tools Used**
 
