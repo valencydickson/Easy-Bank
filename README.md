@@ -2,9 +2,12 @@
 
 ## Easy Bank Landing Page
 
-It is a responsive mobile-first Landing page of Easy Bank company.
+It is a responsive mobile-first Landing page.
 
 **Link
 
 **Tools Used**
-This project uses: - HTML - CSS - jQuery
+This project uses:
+- HTML
+- CSS
+- jQuery
