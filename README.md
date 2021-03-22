@@ -7,6 +7,7 @@ It is a responsive mobile-first Landing page.
 **Link
 
 **Tools Used**
+
 This project uses:
 - HTML
 - CSS
