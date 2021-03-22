@@ -1,0 +1,267 @@
+:root {
+  /* Primary */
+  --DarkBlue: hsl(233, 26%, 24%);
+  --LimeGreen: hsl(136, 65%, 51%);
+  --BrightCyan: hsl(192, 70%, 51%);
+
+  /* Secondary */
+  --GrayishBlue: hsl(233, 8%, 62%);
+  --LightGrayishBlue: hsl(220, 16%, 96%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.section-heading {
+  color: var(--DarkBlue);
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2em;
+}
+
+.logo-btn {
+  height: 100%;
+}
+
+.toggler,
+.toggler-close {
+  height: 2.2vh;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggler-close {
+  display: none;
+  height: 3vh !important;
+}
+
+.navbar {
+  display: none;
+  margin: 2em 0 0;
+  transition: display 0.3s ease-in-out;
+}
+
+.nav-link {
+  margin-bottom: 0.8em;
+  color: black;
+}
+
+.show-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-btn {
+  display: none;
+}
+
+/* INTRODUCTION */
+
+.bg-intro {
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 58vh;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-intro img {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.intro-text {
+  width: 80%;
+  margin: 1em auto 4em;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 2.2rem;
+  color: var(--DarkBlue);
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.intro-text p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5em;
+  color: var(--GrayishBlue);
+  line-height: 1.5;
+}
+
+.cta-btn {
+  padding: 0.9em 2em;
+  color: var(--White);
+  font-size: 0.9rem;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to left,
+    var(--BrightCyan),
+    var(--LimeGreen)
+  );
+  transition: all 0.3s ease-in-out;
+}
+
+/* SERVICES */
+.services {
+  background-color: var(--LightGrayishBlue);
+}
+
+.services-intro {
+  margin-bottom: 3em;
+}
+
+.services-intro p,
+.service-card p {
+  color: var(--GrayishBlue);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.service-card img {
+  margin: 0 auto 1.5em;
+}
+
+.service-card h3 {
+  color: var(--DarkBlue);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.service-card p {
+  margin-bottom: 1em;
+}
+
+/* ARTICLES */
+
+.articles {
+  background-color: var(--VeryLightGray);
+}
+
+.article-card {
+  margin-bottom: 1.5em;
+  padding-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.article-card img {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 1.3em;
+  width: 100%;
+}
+
+.article-card p {
+  padding: 0 2em;
+}
+
+.article-card p {
+  color: var(--GrayishBlue);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.author {
+  font-size: 0.7rem !important;
+  margin-bottom: 0.8em !important;
+}
+
+.article-card h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.7em;
+  padding: 0 1.4em;
+  color: var(--DarkBlue);
+  transition: all 0.3s ease-in-out;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: var(--DarkBlue);
+  padding: 2.5em 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 2em;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+.social-icons {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.social-icons img {
+  width: 25px;
+  margin: 0 0.5em;
+}
+
+.footer-navbar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.footer-navbar a {
+  color: var(--White);
+  margin: 0.5em;
+  font-size: 0.98rem;
+}
+
+.copyright {
+  margin-top: 2.5em;
+  color: var(--GrayishBlue);
+  font-size: 0.9rem;
+}
